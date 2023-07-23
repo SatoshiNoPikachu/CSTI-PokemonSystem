@@ -1,0 +1,9 @@
+{
+  "NatureName": {
+    "ParentObjectID": "PokemonSystem_Nature_",
+    "LocalizationKey": "PokemonSystem_Nature_",
+    "DefaultText": ""
+  },
+  "StatisticUp": 0,
+  "StatisticDown": 0
+}

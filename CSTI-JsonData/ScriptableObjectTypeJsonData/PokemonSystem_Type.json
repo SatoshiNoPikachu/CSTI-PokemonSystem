@@ -1,0 +1,7 @@
+{
+  "TypeName": "LocalizedString",
+  "TypeIcon": "Sprite",
+  "EffectiveSuper": "PokemonSystem_Type",
+  "EffectiveNotVery": "PokemonSystem_Type",
+  "EffectiveNot": "PokemonSystem_Type"
+}

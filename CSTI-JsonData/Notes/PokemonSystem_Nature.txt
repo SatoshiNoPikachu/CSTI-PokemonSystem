@@ -1,0 +1,3 @@
+NatureName	性格名称
+StatisticUp	容易成长的能力
+StatisticDown	不容易成长的能力

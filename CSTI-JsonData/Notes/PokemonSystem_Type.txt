@@ -1,0 +1,5 @@
+TypeName	属性名称
+TypeIcon	属性图标
+EffectiveSuper	效果绝佳
+EffectiveNotVery	效果不好
+EffectiveNot	没有效果

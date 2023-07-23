@@ -1,0 +1,14 @@
+{
+  "TypeName": {
+    "ParentObjectID": "PokemonSystem_Type_",
+    "LocalizationKey": "PokemonSystem_Type_",
+    "DefaultText": ""
+  },
+  "TypeIcon": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "EffectiveSuper": [],
+  "EffectiveNotVery": [],
+  "EffectiveNot": []
+}
