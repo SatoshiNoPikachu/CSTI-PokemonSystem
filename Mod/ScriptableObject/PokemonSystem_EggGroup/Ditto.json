@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "百变怪",
+        "LocalizationKey": "PokemonSystem_EggGroup_Ditto",
+        "ParentObjectID": "PokemonSystem_EggGroup_Ditto"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "害羞",
+        "LocalizationKey": "PokemonSystem_Nature_Bashful",
+        "ParentObjectID": "PokemonSystem_Nature_Bashful"
+    },
+    "StatisticDown": 0,
+    "StatisticUp": 0
+}

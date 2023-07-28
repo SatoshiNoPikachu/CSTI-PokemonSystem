@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "怕寂寞",
+        "LocalizationKey": "PokemonSystem_Nature_Lonely",
+        "ParentObjectID": "PokemonSystem_Nature_Lonely"
+    },
+    "StatisticDown": 3,
+    "StatisticUp": 2
+}

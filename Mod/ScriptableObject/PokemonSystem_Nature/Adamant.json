@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "固执",
+        "LocalizationKey": "PokemonSystem_Nature_Adamant",
+        "ParentObjectID": "PokemonSystem_Nature_Adamant"
+    },
+    "StatisticDown": 4,
+    "StatisticUp": 2
+}

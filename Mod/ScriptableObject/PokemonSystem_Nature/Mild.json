@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "慢吞吞",
+        "LocalizationKey": "PokemonSystem_Nature_Mild",
+        "ParentObjectID": "PokemonSystem_Nature_Mild"
+    },
+    "StatisticDown": 3,
+    "StatisticUp": 4
+}

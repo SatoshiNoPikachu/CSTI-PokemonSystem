@@ -1,12 +1,9 @@
 ﻿using System;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Statistics;
 
-/// <summary>
-/// 种族值
-/// </summary>
 [Serializable]
-public class SpeciesStrength : StatisticValue<byte>
+public class BasePoints : StatisticValue<byte>
 {
     /*
     /// <summary>

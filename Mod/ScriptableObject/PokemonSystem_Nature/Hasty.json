@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "急躁",
+        "LocalizationKey": "PokemonSystem_Nature_Hasty",
+        "ParentObjectID": "PokemonSystem_Nature_Hasty"
+    },
+    "StatisticDown": 3,
+    "StatisticUp": 6
+}

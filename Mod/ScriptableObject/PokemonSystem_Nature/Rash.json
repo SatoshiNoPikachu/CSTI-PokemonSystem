@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "马虎",
+        "LocalizationKey": "PokemonSystem_Nature_Rash",
+        "ParentObjectID": "PokemonSystem_Nature_Rash"
+    },
+    "StatisticDown": 5,
+    "StatisticUp": 4
+}

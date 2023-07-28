@@ -1,0 +1,26 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Steel"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveNotWarpData": [
+        "Fairy"
+    ],
+    "EffectiveNotWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Dragon"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "龙",
+        "LocalizationKey": "PokemonSystem_Type_Dragon",
+        "ParentObjectID": "PokemonSystem_Type_Dragon"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Rock",
+        "Fire",
+        "Water",
+        "Dragon"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Bug",
+        "Steel",
+        "Grass",
+        "Ice"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "火",
+        "LocalizationKey": "PokemonSystem_Type_Fire",
+        "ParentObjectID": "PokemonSystem_Type_Fire"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "妖精",
+        "LocalizationKey": "PokemonSystem_EggGroup_Fairy",
+        "ParentObjectID": "PokemonSystem_EggGroup_Fairy"
+    }
+}

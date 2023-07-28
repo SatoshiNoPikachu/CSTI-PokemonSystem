@@ -1,0 +1,37 @@
+{
+    "ExperienceGroup": 0,
+    "PokedexDesc": {
+        "DefaultText": "给冰ic点点关注！",
+        "LocalizationKey": "PokemonSystem_Pokemon_PokemonDesc_Pikachu",
+        "ParentObjectID": "PokemonSystem_Pokemon_PokemonDesc_Pikachu"
+    },
+    "PokemonImage": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "PokemonImageWarpData": "Pokemon_IceIC",
+    "PokemonImageWarpType": 3,
+    "PokemonName": {
+        "DefaultText": "皮卡丘",
+        "LocalizationKey": "PokemonSystem_Pokemon_PokemonName_Pikachu",
+        "ParentObjectID": "PokemonSystem_Pokemon_PokemonName_Pikachu"
+    },
+    "SpeciesStrength": {
+        "Attack": 55,
+        "Defense": 40,
+        "HP": 35,
+        "SpecialAttack": 50,
+        "SpecialDefense": 50,
+        "Speed": 90
+    },
+    "Type1": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "Type1WarpData": "Electric",
+    "Type1WarpType": 3,
+    "Type2": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    }
+}

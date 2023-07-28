@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "爽朗",
+        "LocalizationKey": "PokemonSystem_Nature_Jolly",
+        "ParentObjectID": "PokemonSystem_Nature_Jolly"
+    },
+    "StatisticDown": 4,
+    "StatisticUp": 6
+}

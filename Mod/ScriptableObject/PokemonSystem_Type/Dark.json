@@ -1,0 +1,25 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Fighting",
+        "Dark",
+        "Fairy"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Ghost",
+        "Psychic"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "恶",
+        "LocalizationKey": "PokemonSystem_Type_Dark",
+        "ParentObjectID": "PokemonSystem_Type_Dark"
+    }
+}

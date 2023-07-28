@@ -1,4 +1,4 @@
-﻿namespace PokemonSystem.Core;
+﻿namespace PokemonSystem.Core.Moves;
 
 /// <summary>
 /// 招式分类

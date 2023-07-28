@@ -1,0 +1,7 @@
+PokemonName	宝可梦名称
+PokedexDesc	图鉴介绍
+PokemonImage	宝可梦立绘
+Type1	第一属性
+Type2	第二属性
+SpeciesStrength	种族值
+ExperienceGroup	经验组

@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "怪兽",
+        "LocalizationKey": "PokemonSystem_EggGroup_Monster",
+        "ParentObjectID": "PokemonSystem_EggGroup_Monster"
+    }
+}

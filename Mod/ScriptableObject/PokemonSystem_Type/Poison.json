@@ -1,0 +1,30 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Poison",
+        "Ground",
+        "Rock",
+        "Ghost"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveNotWarpData": [
+        "Steel"
+    ],
+    "EffectiveNotWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Grass",
+        "Fairy"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "毒",
+        "LocalizationKey": "PokemonSystem_Type_Poison",
+        "ParentObjectID": "PokemonSystem_Type_Poison"
+    }
+}

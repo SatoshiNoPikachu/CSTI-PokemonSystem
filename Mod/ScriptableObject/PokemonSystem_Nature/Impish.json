@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "淘气",
+        "LocalizationKey": "PokemonSystem_Nature_Impish",
+        "ParentObjectID": "PokemonSystem_Nature_Impish"
+    },
+    "StatisticDown": 4,
+    "StatisticUp": 3
+}

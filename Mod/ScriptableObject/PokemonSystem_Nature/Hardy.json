@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "勤奋",
+        "LocalizationKey": "PokemonSystem_Nature_Hardy",
+        "ParentObjectID": "PokemonSystem_Nature_Hardy"
+    },
+    "StatisticDown": 0,
+    "StatisticUp": 0
+}

@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Statistics;
 
 /// <summary>
 /// 能力值
 /// </summary>
-/// <typeparam name="T"></typeparam>
+/// <typeparam name="T">值类型</typeparam>
 [Serializable]
 public abstract class StatisticValue<T> where T : struct
 {

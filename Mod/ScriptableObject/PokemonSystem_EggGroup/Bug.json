@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "虫",
+        "LocalizationKey": "PokemonSystem_EggGroup_Bug",
+        "ParentObjectID": "PokemonSystem_EggGroup_Bug"
+    }
+}

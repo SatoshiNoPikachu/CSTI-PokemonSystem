@@ -1,0 +1,30 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Fighting",
+        "Flying",
+        "Poison",
+        "Ghost",
+        "Steel",
+        "Fire",
+        "Fairy"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Grass",
+        "Psychic",
+        "Dark"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "虫",
+        "LocalizationKey": "PokemonSystem_Type_Bug",
+        "ParentObjectID": "PokemonSystem_Type_Bug"
+    }
+}

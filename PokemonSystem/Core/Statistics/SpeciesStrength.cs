@@ -1,45 +1,42 @@
 ﻿using System;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Statistics;
 
 /// <summary>
-/// 能力类型
+/// 种族值
 /// </summary>
 [Serializable]
-public enum StatisticType
+public class SpeciesStrength : StatisticValue<byte>
 {
-    /// <summary>
-    /// 无
-    /// </summary>
-    Null,
-    
+    /*
     /// <summary>
     /// 体力
     /// </summary>
-    HP,
+    public byte HP = 0;
     
     /// <summary>
     /// 攻击
     /// </summary>
-    Attack,
+    public byte Attack = 0;
     
     /// <summary>
     /// 防御
     /// </summary>
-    Defense,
+    public byte Defense = 0;
     
     /// <summary>
     /// 特攻
     /// </summary>
-    SpecialAttack,
+    public byte SpecialAttack = 0;
     
     /// <summary>
     /// 特防
     /// </summary>
-    SpecialDefense,
+    public byte SpecialDefense = 0;
     
     /// <summary>
     /// 速度
     /// </summary>
-    Speed
+    public byte Speed = 0;
+    */
 }

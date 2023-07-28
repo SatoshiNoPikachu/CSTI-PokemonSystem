@@ -1,0 +1,28 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Steel",
+        "Psychic"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveNotWarpData": [
+        "Dark"
+    ],
+    "EffectiveNotWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Fighting",
+        "Poison"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "超能力",
+        "LocalizationKey": "PokemonSystem_Type_Psychic",
+        "ParentObjectID": "PokemonSystem_Type_Psychic"
+    }
+}

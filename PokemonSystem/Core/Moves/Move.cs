@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Moves;
 
 /// <summary>
 /// 招式

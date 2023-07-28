@@ -1,0 +1,1 @@
+EggGroupName	性格名称

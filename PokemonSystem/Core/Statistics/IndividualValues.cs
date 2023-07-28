@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Statistics;
 
 /// <summary>
 /// 个体值

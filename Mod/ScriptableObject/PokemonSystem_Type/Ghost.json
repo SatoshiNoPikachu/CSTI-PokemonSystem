@@ -1,0 +1,27 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Dark"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveNotWarpData": [
+        "Normal"
+    ],
+    "EffectiveNotWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Ghost",
+        "Psychic"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "幽灵",
+        "LocalizationKey": "PokemonSystem_Type_Ghost",
+        "ParentObjectID": "PokemonSystem_Type_Ghost"
+    }
+}

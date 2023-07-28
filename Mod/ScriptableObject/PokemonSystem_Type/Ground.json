@@ -1,0 +1,31 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Bug",
+        "Grass"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveNotWarpData": [
+        "Flying"
+    ],
+    "EffectiveNotWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Poison",
+        "Rock",
+        "Steel",
+        "Fire",
+        "Electric"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "地面",
+        "LocalizationKey": "PokemonSystem_Type_Ground",
+        "ParentObjectID": "PokemonSystem_Type_Ground"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "龙",
+        "LocalizationKey": "PokemonSystem_EggGroup_Dragon",
+        "ParentObjectID": "PokemonSystem_EggGroup_Dragon"
+    }
+}

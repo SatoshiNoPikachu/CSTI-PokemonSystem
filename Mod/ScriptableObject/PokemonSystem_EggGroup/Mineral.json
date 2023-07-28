@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "矿物",
+        "LocalizationKey": "PokemonSystem_EggGroup_Mineral",
+        "ParentObjectID": "PokemonSystem_EggGroup_Mineral"
+    }
+}

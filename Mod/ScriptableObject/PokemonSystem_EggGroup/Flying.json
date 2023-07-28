@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "飞行",
+        "LocalizationKey": "PokemonSystem_EggGroup_Flying",
+        "ParentObjectID": "PokemonSystem_EggGroup_Flying"
+    }
+}

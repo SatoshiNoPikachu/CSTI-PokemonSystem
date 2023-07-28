@@ -1,42 +1,45 @@
 ﻿using System;
-using UnityEngine;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Statistics;
 
 /// <summary>
-/// 能力
+/// 能力类型
 /// </summary>
-public class Statistic : StatisticValue<int>
+[Serializable]
+public enum StatisticType
 {
-    /*
+    /// <summary>
+    /// 无
+    /// </summary>
+    Null,
+    
     /// <summary>
     /// 体力
     /// </summary>
-    public int HP = 0;
+    HP,
     
     /// <summary>
     /// 攻击
     /// </summary>
-    public int Attack = 0;
+    Attack,
     
     /// <summary>
     /// 防御
     /// </summary>
-    public int Defense = 0;
+    Defense,
     
     /// <summary>
     /// 特攻
     /// </summary>
-    public int SpecialAttack = 0;
+    SpecialAttack,
     
     /// <summary>
     /// 特防
     /// </summary>
-    public int SpecialDefense = 0;
+    SpecialDefense,
     
     /// <summary>
     /// 速度
     /// </summary>
-    public int Speed = 0;
-    */
+    Speed
 }

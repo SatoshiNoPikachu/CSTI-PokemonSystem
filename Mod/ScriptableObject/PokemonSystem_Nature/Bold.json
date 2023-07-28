@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "大胆",
+        "LocalizationKey": "PokemonSystem_Nature_Bold",
+        "ParentObjectID": "PokemonSystem_Nature_Bold"
+    },
+    "StatisticDown": 2,
+    "StatisticUp": 3
+}

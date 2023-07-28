@@ -1,0 +1,8 @@
+{
+  "HP": "Int32",
+  "Attack": "Int32",
+  "Defense": "Int32",
+  "SpecialAttack": "Int32",
+  "SpecialDefense": "Int32",
+  "Speed": "Int32"
+}

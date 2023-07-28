@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "坦率",
+        "LocalizationKey": "PokemonSystem_Nature_Docile",
+        "ParentObjectID": "PokemonSystem_Nature_Docile"
+    },
+    "StatisticDown": 0,
+    "StatisticUp": 0
+}

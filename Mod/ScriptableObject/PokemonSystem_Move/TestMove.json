@@ -1,0 +1,18 @@
+{
+    "MoveDesc": {
+        "DefaultText": "测试招式",
+        "LocalizationKey": "PokemonSystem_Move_MoveDesc_TestMove",
+        "ParentObjectID": "PokemonSystem_Move_MoveDesc_TestMove"
+    },
+    "MoveName": {
+        "DefaultText": "测试招式",
+        "LocalizationKey": "PokemonSystem_Move_MoveName_TestMove",
+        "ParentObjectID": "PokemonSystem_Move_MoveName_TestMove"
+    },
+    "Type": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeWarpData": "Bug",
+    "TypeWarpType": 3
+}

@@ -1,4 +1,5 @@
 ﻿using System;
+using PokemonSystem.Core.Statistics;
 using UnityEngine;
 
 namespace PokemonSystem.Core;

@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "浮躁",
+        "LocalizationKey": "PokemonSystem_Nature_Quirky",
+        "ParentObjectID": "PokemonSystem_Nature_Quirky"
+    },
+    "StatisticDown": 0,
+    "StatisticUp": 0
+}

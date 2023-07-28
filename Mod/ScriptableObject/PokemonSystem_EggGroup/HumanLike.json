@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "人型",
+        "LocalizationKey": "PokemonSystem_EggGroup_HumanLike",
+        "ParentObjectID": "PokemonSystem_EggGroup_HumanLike"
+    }
+}

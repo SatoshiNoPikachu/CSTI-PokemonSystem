@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "认真",
+        "LocalizationKey": "PokemonSystem_Nature_Serious",
+        "ParentObjectID": "PokemonSystem_Nature_Serious"
+    },
+    "StatisticDown": 0,
+    "StatisticUp": 0
+}

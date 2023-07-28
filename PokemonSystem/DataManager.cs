@@ -16,19 +16,53 @@ public static class DataManager
 
     private static readonly Dictionary<string, Core.Type> TypeDict = new();
     private static readonly Dictionary<string, Nature> NatureDict = new();
+    private static readonly Dictionary<string, EggGroup> EggGroupDict = new();
+    // private static readonly Dictionary<string, Move> MoveDict = new();
+    // private static readonly Dictionary<string, PokemonData> PokemonDataDict = new();
 
     static DataManager()
     {
         AllData.Add(typeof(Core.Type), TypeDict);
+
         AllData.Add(typeof(Nature), NatureDict);
+
+        AllData.Add(typeof(EggGroup), EggGroupDict);
+
+        // AllData.Add(typeof(Move), MoveDict);
+
+        // AllData.Add(typeof(PokemonData), PokemonDataDict);
     }
 
+    public static void LoadData()
+    {
+        _LoadDataScriptObj(TypeDict, "PokemonSystem_Type");
+
+        _LoadDataScriptObj(NatureDict, "PokemonSystem_Nature", false);
+
+        _LoadDataScriptObj(EggGroupDict, "PokemonSystem_EggGroup", false);
+
+        // _LoadDataScriptObj(MoveDict, "PokemonSystem_Move");
+
+        // _LoadDataScriptObj(PokemonDataDict, "PokemonSystem_Pokemon");
+    }
+
+    /// <summary>
+    /// 获取数据字典
+    /// </summary>
+    /// <typeparam name="T">引用数据类型</typeparam>
+    /// <returns>数据字典</returns>
     private static Dictionary<string, T> GetDataDict<T>() where T : class
     {
         return (from data in AllData where data.Key == typeof(T) select data.Value as Dictionary<string, T>)
             .FirstOrDefault();
     }
 
+    /// <summary>
+    /// 根据键获取数据
+    /// </summary>
+    /// <param name="key">数据键</param>
+    /// <typeparam name="T">引用数据类型</typeparam>
+    /// <returns>数据</returns>
     public static T GetDataFromKey<T>(string key) where T : class
     {
         var dict = GetDataDict<T>();
@@ -36,6 +70,12 @@ public static class DataManager
         return dict.TryGetValue(key, out var data) ? data : null;
     }
 
+    /// <summary>
+    /// 根据多个键获取数据
+    /// </summary>
+    /// <param name="keys">可迭代的数据键序列</param>
+    /// <typeparam name="T">引用数据类型</typeparam>
+    /// <returns>数据列表</returns>
     public static List<T> GetDataFromKey<T>(IEnumerable<string> keys) where T : class
     {
         var dict = GetDataDict<T>();
@@ -47,14 +87,8 @@ public static class DataManager
             if (data != null) list.Add(data);
             else Debug.LogWarning($"[PokemonSystem]: Not find key {key} in {typeof(T).Name} sequence.");
         }
+
         return list;
-    }
-
-    public static void LoadData()
-    {
-        _LoadDataScriptObj(TypeDict, "PokemonSystem_Type");
-
-        _LoadDataScriptObj(NatureDict, "PokemonSystem_Nature", false);
     }
 
     // private static void _LoadData<T>(Dictionary<string, T> dict, string data_name)
@@ -124,6 +158,8 @@ public static class DataManager
                 JsonUtility.FromJsonOverwrite(json, obj);
                 obj.name = name;
                 dict[name] = obj;
+
+                // if (obj is IScriptableObject iObj) iObj.OnDeserialize(JsonMapper.ToObject(json));
 
                 ModLoader.ModLoader.AllScriptableObjectWithoutGuidTypeDict[type][name] = obj;
             }

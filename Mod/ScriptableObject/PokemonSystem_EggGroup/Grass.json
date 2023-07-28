@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "植物",
+        "LocalizationKey": "PokemonSystem_EggGroup_Grass",
+        "ParentObjectID": "PokemonSystem_EggGroup_Grass"
+    }
+}

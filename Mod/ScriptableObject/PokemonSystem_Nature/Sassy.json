@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "自大",
+        "LocalizationKey": "PokemonSystem_Nature_Sassy",
+        "ParentObjectID": "PokemonSystem_Nature_Sassy"
+    },
+    "StatisticDown": 2,
+    "StatisticUp": 5
+}

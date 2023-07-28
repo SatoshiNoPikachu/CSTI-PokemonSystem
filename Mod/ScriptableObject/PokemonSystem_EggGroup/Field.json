@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "陆上",
+        "LocalizationKey": "PokemonSystem_EggGroup_Field",
+        "ParentObjectID": "PokemonSystem_EggGroup_Field"
+    }
+}

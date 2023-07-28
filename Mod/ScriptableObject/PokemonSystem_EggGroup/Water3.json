@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "水中3",
+        "LocalizationKey": "PokemonSystem_EggGroup_Water3",
+        "ParentObjectID": "PokemonSystem_EggGroup_Water3"
+    }
+}

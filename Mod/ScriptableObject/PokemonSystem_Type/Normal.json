@@ -1,0 +1,23 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Rock",
+        "Steel"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveNotWarpData": [
+        "Ghost"
+    ],
+    "EffectiveNotWarpType": 3,
+    "EffectiveSuper": [],
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "一般",
+        "LocalizationKey": "PokemonSystem_Type_Normal",
+        "ParentObjectID": "PokemonSystem_Type_Normal"
+    }
+}

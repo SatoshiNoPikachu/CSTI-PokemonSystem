@@ -1,0 +1,28 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Steel",
+        "Fire",
+        "Water",
+        "Ice"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Flying",
+        "Ground",
+        "Grass",
+        "Dragon"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "冰",
+        "LocalizationKey": "PokemonSystem_Type_Ice",
+        "ParentObjectID": "PokemonSystem_Type_Ice"
+    }
+}

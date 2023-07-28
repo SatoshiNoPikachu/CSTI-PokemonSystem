@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "内敛",
+        "LocalizationKey": "PokemonSystem_Nature_Modest",
+        "ParentObjectID": "PokemonSystem_Nature_Modest"
+    },
+    "StatisticDown": 2,
+    "StatisticUp": 4
+}

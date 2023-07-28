@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "勇敢",
+        "LocalizationKey": "PokemonSystem_Nature_Brave",
+        "ParentObjectID": "PokemonSystem_Nature_Brave"
+    },
+    "StatisticDown": 6,
+    "StatisticUp": 2
+}

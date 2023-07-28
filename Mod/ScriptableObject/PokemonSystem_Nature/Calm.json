@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "温和",
+        "LocalizationKey": "PokemonSystem_Nature_Calm",
+        "ParentObjectID": "PokemonSystem_Nature_Calm"
+    },
+    "StatisticDown": 2,
+    "StatisticUp": 5
+}

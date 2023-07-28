@@ -1,0 +1,16 @@
+{
+  "MoveName": {
+    "ParentObjectID": "PokemonSystem_Move_MoveName_",
+    "LocalizationKey": "PokemonSystem_Move_MoveName_",
+    "DefaultText": ""
+  },
+  "MoveDesc": {
+    "ParentObjectID": "PokemonSystem_Move_MoveDesc_",
+    "LocalizationKey": "PokemonSystem_Move_MoveDesc_",
+    "DefaultText": ""
+  },
+  "Type": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  }
+}

@@ -1,0 +1,6 @@
+HP	体力
+Attack	攻击
+Defense	防御
+SpecialAttack	特攻
+SpecialDefense	特防
+Speed	速度

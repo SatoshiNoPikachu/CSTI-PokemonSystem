@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "温顺",
+        "LocalizationKey": "PokemonSystem_Nature_Gentle",
+        "ParentObjectID": "PokemonSystem_Nature_Gentle"
+    },
+    "StatisticDown": 3,
+    "StatisticUp": 5
+}

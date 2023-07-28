@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "胆小",
+        "LocalizationKey": "PokemonSystem_Nature_Timid",
+        "ParentObjectID": "PokemonSystem_Nature_Timid"
+    },
+    "StatisticDown": 2,
+    "StatisticUp": 6
+}

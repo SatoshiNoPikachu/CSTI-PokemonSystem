@@ -1,0 +1,26 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Poison",
+        "Steel",
+        "Fire"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Fighting",
+        "Dragon",
+        "Dark"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "妖精",
+        "LocalizationKey": "PokemonSystem_Type_Fairy",
+        "ParentObjectID": "PokemonSystem_Type_Fairy"
+    }
+}

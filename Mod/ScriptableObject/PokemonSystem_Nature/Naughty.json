@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "顽皮",
+        "LocalizationKey": "PokemonSystem_Nature_Naughty",
+        "ParentObjectID": "PokemonSystem_Nature_Naughty"
+    },
+    "StatisticDown": 5,
+    "StatisticUp": 2
+}

@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "冷静",
+        "LocalizationKey": "PokemonSystem_Nature_Quiet",
+        "ParentObjectID": "PokemonSystem_Nature_Quiet"
+    },
+    "StatisticDown": 6,
+    "StatisticUp": 4
+}

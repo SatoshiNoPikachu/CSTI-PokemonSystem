@@ -1,0 +1,51 @@
+{
+    "ExperienceGroup": 0,
+    "MoveByLevel": [
+        {
+            "IsEvolving": false,
+            "Move": {
+                "m_FileID": 0,
+                "m_PathID": 0
+            },
+            "MoveWarpData": "TestMove",
+            "MoveWarpType": 3,
+            "NeedLevel": 20
+        }
+    ],
+    "PokedexDesc": {
+        "DefaultText": "给冰ic点点关注！",
+        "LocalizationKey": "PokemonSystem_Pokemon_PokemonDesc_IceIC",
+        "ParentObjectID": "PokemonSystem_Pokemon_PokemonDesc_IceIC"
+    },
+    "PokemonImage": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "PokemonImageWarpData": "Pokemon_IceIC",
+    "PokemonImageWarpType": 3,
+    "PokemonName": {
+        "DefaultText": "冰ic",
+        "LocalizationKey": "PokemonSystem_Pokemon_PokemonName_IceIC",
+        "ParentObjectID": "PokemonSystem_Pokemon_PokemonName_IceIC"
+    },
+    "SpeciesStrength": {
+        "Attack": 55,
+        "Defense": 40,
+        "HP": 35,
+        "SpecialAttack": 50,
+        "SpecialDefense": 50,
+        "Speed": 90
+    },
+    "Type1": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "Type1WarpData": "Ice",
+    "Type1WarpType": 3,
+    "Type2": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "Type2WarpData": "Dark",
+    "Type2WarpType": 3
+}

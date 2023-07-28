@@ -1,0 +1,30 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Flying",
+        "Poison",
+        "Bug",
+        "Steel",
+        "Fire",
+        "Grass",
+        "Dragon"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Ground",
+        "Rock",
+        "Water"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "草",
+        "LocalizationKey": "PokemonSystem_Type_Grass",
+        "ParentObjectID": "PokemonSystem_Type_Grass"
+    }
+}

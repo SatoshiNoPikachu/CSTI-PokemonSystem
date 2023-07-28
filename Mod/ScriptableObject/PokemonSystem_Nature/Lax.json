@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "乐天",
+        "LocalizationKey": "PokemonSystem_Nature_Lax",
+        "ParentObjectID": "PokemonSystem_Nature_Lax"
+    },
+    "StatisticDown": 5,
+    "StatisticUp": 3
+}

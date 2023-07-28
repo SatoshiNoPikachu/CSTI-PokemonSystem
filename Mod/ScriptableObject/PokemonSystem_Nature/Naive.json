@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "天真",
+        "LocalizationKey": "PokemonSystem_Nature_Naive",
+        "ParentObjectID": "PokemonSystem_Nature_Naive"
+    },
+    "StatisticDown": 5,
+    "StatisticUp": 6
+}

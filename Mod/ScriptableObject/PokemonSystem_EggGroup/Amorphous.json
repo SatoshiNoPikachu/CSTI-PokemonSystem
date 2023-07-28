@@ -1,0 +1,7 @@
+{
+    "EggGroupName": {
+        "DefaultText": "不定形",
+        "LocalizationKey": "PokemonSystem_EggGroup_Amorphous",
+        "ParentObjectID": "PokemonSystem_EggGroup_Amorphous"
+    }
+}

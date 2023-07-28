@@ -1,0 +1,27 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Fighting",
+        "Ground",
+        "Steel"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Flying",
+        "Bug",
+        "Fire",
+        "Ice"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "岩石",
+        "LocalizationKey": "PokemonSystem_Type_Rock",
+        "ParentObjectID": "PokemonSystem_Type_Rock"
+    }
+}

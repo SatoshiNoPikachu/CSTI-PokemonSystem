@@ -1,0 +1,26 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Water",
+        "Grass",
+        "Dragon"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Ground",
+        "Rock",
+        "Fire"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "水",
+        "LocalizationKey": "PokemonSystem_Type_Water",
+        "ParentObjectID": "PokemonSystem_Type_Water"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "EffectiveNot": [],
+    "EffectiveNotVery": [],
+    "EffectiveNotVeryWarpData": [
+        "Flying",
+        "Poison",
+        "Bug",
+        "Psychic",
+        "Fairy"
+    ],
+    "EffectiveNotVeryWarpType": 3,
+    "EffectiveNotWarpData": [
+        "Ghost"
+    ],
+    "EffectiveNotWarpType": 3,
+    "EffectiveSuper": [],
+    "EffectiveSuperWarpData": [
+        "Normal",
+        "Rock",
+        "Steel",
+        "Ice",
+        "Dark"
+    ],
+    "EffectiveSuperWarpType": 3,
+    "TypeIcon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "TypeName": {
+        "DefaultText": "格斗",
+        "LocalizationKey": "PokemonSystem_Type_Fighting",
+        "ParentObjectID": "PokemonSystem_Type_Fighting"
+    }
+}

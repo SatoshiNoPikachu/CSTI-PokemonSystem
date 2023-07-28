@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "悠闲",
+        "LocalizationKey": "PokemonSystem_Nature_Relaxed",
+        "ParentObjectID": "PokemonSystem_Nature_Relaxed"
+    },
+    "StatisticDown": 6,
+    "StatisticUp": 3
+}

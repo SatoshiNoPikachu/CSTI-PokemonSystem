@@ -1,0 +1,9 @@
+{
+    "NatureName": {
+        "DefaultText": "慎重",
+        "LocalizationKey": "PokemonSystem_Nature_Careful",
+        "ParentObjectID": "PokemonSystem_Nature_Careful"
+    },
+    "StatisticDown": 4,
+    "StatisticUp": 5
+}

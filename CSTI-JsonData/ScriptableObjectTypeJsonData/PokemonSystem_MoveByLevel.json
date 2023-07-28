@@ -1,0 +1,5 @@
+{
+  "Move": "PokemonSystem_Move",
+  "NeedLevel": "Int32",
+  "IsEvolving": "Boolean"
+}

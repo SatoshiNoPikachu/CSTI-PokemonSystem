@@ -1,0 +1,10 @@
+{
+  "PokemonName": "LocalizedString",
+  "PokedexDesc": "LocalizedString",
+  "PokemonImage": "Sprite",
+  "Type1": "PokemonSystem_Type",
+  "Type2": "PokemonSystem_Type",
+  "SpeciesStrength": "PokemonSystem_SpeciesStrength",
+  "ExperienceGroup": "PokemonSystem_ExperienceGroup",
+  "MoveByLevel": "PokemonSystem_MoveByLevel"
+}
