@@ -40,10 +40,12 @@ public abstract class StatisticValue<T> where T : struct
     public T Speed;
 
     /// <summary>
-    /// 获取值
+    /// 获取能力值
+    /// <br/>
+    /// 若参数 type 为非基本能力类型，则返回 null
     /// </summary>
     /// <param name="type">能力类型</param>
-    /// <returns>返回参数 type 所对应能力的值，若不为六种基本的能力类型，则返回 null</returns>
+    /// <returns>能力值</returns>
     public virtual T? GetValue(StatisticType type)
     {
         return type switch
@@ -56,5 +58,39 @@ public abstract class StatisticValue<T> where T : struct
             StatisticType.Speed => Speed,
             _ => null
         };
+    }
+
+    /// <summary>
+    /// 设置能力值
+    /// </summary>
+    /// <param name="type">能力类型</param>
+    /// <param name="value">值</param>
+    /// <returns>是否进行了赋值</returns>
+    public virtual bool SetValue(StatisticType type, T value)
+    {
+        switch (type)
+        {
+            case StatisticType.HP:
+                HP = value;
+                return true;
+            case StatisticType.Attack:
+                Attack = value;
+                return true;
+            case StatisticType.Defense:
+                Defense = value;
+                return true;
+            case StatisticType.SpecialAttack:
+                SpecialAttack = value;
+                return true;
+            case StatisticType.SpecialDefense:
+                SpecialDefense = value;
+                return true;
+            case StatisticType.Speed:
+                Speed = value;
+                return true;
+            case StatisticType.Null:
+            default:
+                return false;
+        }
     }
 }

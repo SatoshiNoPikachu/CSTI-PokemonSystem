@@ -9,6 +9,11 @@ namespace PokemonSystem.Core.Statistics;
 public class IndividualValues : StatisticValue<byte>
 {
     /// <summary>
+    /// 单项最大值
+    /// </summary>
+    public const byte MaxValue = 31;
+    
+    /// <summary>
     /// 获取随机个体值
     /// </summary>
     /// <returns>个体值对象</returns>
@@ -26,36 +31,29 @@ public class IndividualValues : StatisticValue<byte>
         };
         return iv;
     }
-    
-    /*
+
     /// <summary>
-    /// 体力
+    /// 获取个体值，返回值不会大于允许的最大值
+    /// <br/>
+    /// 若参数 type 为非基本能力类型，则返回 null
     /// </summary>
-    public byte HP = 0;
-    
-    /// <summary>
-    /// 攻击
-    /// </summary>
-    public byte Attack = 0;
-    
-    /// <summary>
-    /// 防御
-    /// </summary>
-    public byte Defense = 0;
+    /// <param name="type">能力类型</param>
+    /// <returns>能力值</returns>
+    public override byte? GetValue(StatisticType type)
+    {
+        var value = base.GetValue(type);
+        return value is null or > MaxValue ? value : MaxValue;
+    }
+
     
     /// <summary>
-    /// 特攻
+    /// 设置个体值，该值不会大于允许的最大值
     /// </summary>
-    public byte SpecialAttack = 0;
-    
-    /// <summary>
-    /// 特防
-    /// </summary>
-    public byte SpecialDefense = 0;
-    
-    /// <summary>
-    /// 速度
-    /// </summary>
-    public byte Speed = 0;
-    */
+    /// <param name="type">能力类型</param>
+    /// <param name="value">值</param>
+    /// <returns>是否进行了赋值</returns>
+    public override bool SetValue(StatisticType type, byte value)
+    {
+        return base.SetValue(type, value > MaxValue ? MaxValue : value);
+    }
 }
