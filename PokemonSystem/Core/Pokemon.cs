@@ -4,6 +4,7 @@ using PokemonSystem.Core.Experiences;
 using PokemonSystem.Core.Items;
 using PokemonSystem.Core.Moves;
 using PokemonSystem.Core.Statistics;
+using PokemonSystem.Manager;
 
 namespace PokemonSystem.Core;
 

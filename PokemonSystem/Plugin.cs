@@ -32,6 +32,6 @@ public class Plugin : BaseUnityPlugin
     [HarmonyPostfix, HarmonyPatch(typeof(GameLoad), "LoadMainGameData")]
     public static void GameLoad_LoadMainGameData_Postfix()
     {
-        DataManager.LoadData();
+        Manager.DataManager.LoadData();
     }
 }

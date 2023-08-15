@@ -102,6 +102,7 @@
     <Compile Include="Core\Experiences\Experience.cs" />
     <Compile Include="Core\Experiences\ExperienceGroup.cs" />
     <Compile Include="Core\Experiences\ExperienceTable.cs" />
+    <Compile Include="Core\IScriptableObject.cs" />
     <Compile Include="Core\Items\Helditem.cs" />
     <Compile Include="Core\Items\Item.cs" />
     <Compile Include="Core\Items\TechnicalMachine.cs" />
@@ -110,7 +111,9 @@
     <Compile Include="Core\Moves\MoveByLevel.cs" />
     <Compile Include="Core\Moves\MoveCategory.cs" />
     <Compile Include="Core\Moves\MoveEffect.cs" />
+    <Compile Include="Core\Nature.cs" />
     <Compile Include="Core\Pokemon.cs" />
+    <Compile Include="Core\PokemonData.cs" />
     <Compile Include="Core\PokemonSaveData.cs" />
     <Compile Include="Core\Statistics\BasePoints.cs" />
     <Compile Include="Core\Statistics\IndividualValues.cs" />
@@ -119,11 +122,9 @@
     <Compile Include="Core\Statistics\StatisticType.cs" />
     <Compile Include="Core\Statistics\StatisticValue.cs" />
     <Compile Include="Core\TimeSlot.cs" />
-    <Compile Include="DataManager.cs" />
-    <Compile Include="Core\Nature.cs" />
     <Compile Include="Core\Type.cs" />
+    <Compile Include="Manager\DataManager.cs" />
     <Compile Include="Plugin.cs" />
-    <Compile Include="Core\PokemonData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,7 +10,7 @@ namespace PokemonSystem.Core;
 /// 宝可梦数据
 /// </summary>
 [Serializable]
-public class PokemonData : ScriptableObject
+public class PokemonData : ScriptableObject, IScriptableObject
 {
     /// <summary>
     /// 宝可梦名称
@@ -71,15 +71,4 @@ public class PokemonData : ScriptableObject
     /// 进化条件
     /// </summary>
     public EvolutionCondition[] EvolutionConditions;
-
-    /*
-    public void OnDeserialize(JsonData data)
-    {
-        if (data.ContainsKey("SpeciesStrength"))
-            SpeciesStrength = JsonMapper.ToObject<SpeciesStrength>(data["SpeciesStrength"].ToJson());
-        
-        if (data.ContainsKey("MoveByLevel"))
-            MoveByLevel = JsonMapper.ToObject<MoveByLevel[]>(data["MoveByLevel"].ToJson());
-    }
-    */
 }
