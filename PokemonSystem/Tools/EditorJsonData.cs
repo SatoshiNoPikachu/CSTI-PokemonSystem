@@ -162,6 +162,7 @@ public class EditorJsonData
     {
         var dir_tmp = Directory.CreateDirectory(Path.Combine(_output, "ScriptableObjectJsonDataWithWarpLitAllInOne"));
         var dir_name = Directory.CreateDirectory(Path.Combine(_output, "ScriptableObjectObjectName"));
+        var dir_base = Directory.CreateDirectory(Path.Combine(_output, "UniqueIDScriptableBaseJsonData"));
 
         foreach (var (type, name) in _types)
         {
@@ -171,25 +172,27 @@ public class EditorJsonData
 
             var data = TypeToJsonData(type, name);
             var dir = Directory.CreateDirectory(Path.Combine(dir_tmp.FullName, name));
-            OutputJson(dir.FullName, "", data.ToJson());
-            OutputJson(dir.FullName, "BaseTemplate(模板)", data.ToJson());
+
+            var json = data.ToJson();
+            OutputJson(dir.FullName, "", json);
+            OutputJson(dir.FullName, "BaseTemplate(模板)", json);
+            OutputJson(dir_base.FullName, name, json);
             OutputTxt(dir_name.FullName, name, "BaseTemplate(模板)");
         }
     }
 
-    private void CreateFieldTemplate(Type type, string base_name)
+    private void CreateBaseJson(Type type, string base_name)
     {
-        if (!type.IsArray) return;
+        if (type.IsArray) type = type.GetElementType();
+        
+        if (type is null) return;
+        if (!_types.ContainsKey(type)) return;
+        if (type.IsSubclassOf(typeof(UnityEngine.Object))) return;
 
-        var element_type = type.GetElementType();
-        if (element_type is null) return;
-        if (!_types.ContainsKey(element_type)) return;
-        if (element_type.IsSubclassOf(typeof(UnityEngine.Object))) return;
-
-        Debug.Log($"-- FieldTemplate: {element_type.Name}");
-        var data = TypeToJsonData(element_type, base_name);
+        Debug.Log($"-- BaseJson: {type.Name}");
+        var data = TypeToJsonData(type, base_name);
         var dir = Directory.CreateDirectory(Path.Combine(_output, "UniqueIDScriptableBaseJsonData", base_name));
-        OutputJson(dir.FullName, _types[element_type], data.ToJson());
+        OutputJson(dir.FullName, _types[type], data.ToJson());
     }
 
     private JsonData TypeToJsonData(Type type, string base_name)
@@ -202,7 +205,7 @@ public class EditorJsonData
             if (field.IsStatic || field.IsLiteral) continue;
 
             no_field = false;
-            CreateFieldTemplate(field.FieldType, base_name);
+            CreateBaseJson(field.FieldType, base_name);
             data[field.Name] = FieldToJsonData(field, base_name);
         }
 
