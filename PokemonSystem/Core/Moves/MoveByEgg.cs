@@ -1,5 +1,6 @@
 ﻿using System;
 using PokemonSystem.Core.Items;
+using PokemonSystem.Core.Poke;
 
 namespace PokemonSystem.Core.Moves;
 

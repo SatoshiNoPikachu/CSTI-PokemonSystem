@@ -8,6 +8,7 @@ using HarmonyLib;
 using LitJson;
 using PokemonSystem.Core;
 using PokemonSystem.Core.Moves;
+using PokemonSystem.Core.Poke;
 using UnityEngine;
 using Object = UnityEngine.Object;
 using Type = System.Type;
@@ -17,7 +18,6 @@ namespace PokemonSystem.Manager;
 public static class DataManager
 {
     private static readonly Dictionary<Type, IDictionary> AllData = new();
-
     private static readonly Dictionary<string, Core.Type> TypeDict = new();
     private static readonly Dictionary<string, Nature> NatureDict = new();
     private static readonly Dictionary<string, EggGroup> EggGroupDict = new();
@@ -41,15 +41,15 @@ public static class DataManager
     {
         var warp_data = new Dictionary<ScriptableObject, JsonData>();
 
-        _LoadDataScriptObj(TypeDict, "PokemonSystem_Type", warp_data);
+        _LoadDataScriptObj(TypeDict, "Poke-Type", warp_data);
 
-        _LoadDataScriptObj(NatureDict, "PokemonSystem_Nature");
+        _LoadDataScriptObj(NatureDict, "Poke-Nature");
 
-        _LoadDataScriptObj(EggGroupDict, "PokemonSystem_EggGroup");
+        _LoadDataScriptObj(EggGroupDict, "Poke-EggGroup");
 
-        _LoadDataScriptObj(MoveDict, "PokemonSystem_Move", warp_data);
+        _LoadDataScriptObj(MoveDict, "Poke-Move", warp_data);
 
-        _LoadDataScriptObj(PokemonDataDict, "PokemonSystem_Pokemon", warp_data);
+        _LoadDataScriptObj(PokemonDataDict, "Poke-Pokemon", warp_data);
 
         WarpData(warp_data);
     }

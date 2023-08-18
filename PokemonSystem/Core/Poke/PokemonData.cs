@@ -1,10 +1,10 @@
 using System;
-using UnityEngine;
 using PokemonSystem.Core.Experiences;
 using PokemonSystem.Core.Moves;
 using PokemonSystem.Core.Statistics;
+using UnityEngine;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Poke;
 
 /// <summary>
 /// 宝可梦数据
@@ -46,6 +46,36 @@ public class PokemonData : ScriptableObject, IScriptableObject
     /// 经验组
     /// </summary>
     public ExperienceGroup ExpGroup;
+    
+    /// <summary>
+    /// 性别比例
+    /// </summary>
+    public GenderRatio GenderRatio;
+
+    /// <summary>
+    /// 身高
+    /// </summary>
+    public float Height;
+
+    /// <summary>
+    /// 体重
+    /// </summary>
+    public float Weight;
+
+    /// <summary>
+    /// 基础经验值
+    /// </summary>
+    public short BaseExp;
+
+    /// <summary>
+    /// 捕获率
+    /// </summary>
+    public byte CatchRate;
+
+    /// <summary>
+    /// 孵化周期
+    /// </summary>
+    public byte EggCycle;
 
     /// <summary>
     /// 通过等级提升学习的招式

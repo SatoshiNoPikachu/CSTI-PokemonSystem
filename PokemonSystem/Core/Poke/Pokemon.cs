@@ -6,7 +6,7 @@ using PokemonSystem.Core.Moves;
 using PokemonSystem.Core.Statistics;
 using PokemonSystem.Manager;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Poke;
 
 /// <summary>
 /// 宝可梦
@@ -76,12 +76,9 @@ public class Pokemon
         DataManager.GetDataFromKey<Move>(data.CurrentMoves.Take(data.CurrentMoves.Length)).CopyTo(CurrentMoves);
     }
 
-    /*
-    public Statistic GetStatistic()
-    {
-        var stat = new Statistic();
-
-        return stat;
-    }
-    */
+    /// <summary>
+    /// 获取能力
+    /// </summary>
+    /// <returns>能力</returns>
+    public Statistic GetStatistic() => Statistic.Create(this);
 }

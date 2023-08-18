@@ -3,7 +3,7 @@ using System.Linq;
 using LitJson;
 using PokemonSystem.Core.Statistics;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Poke;
 
 /// <summary>
 /// 宝可梦保存数据
@@ -55,6 +55,10 @@ public class PokemonSaveData
     /// 当前的招式
     /// </summary>
     public string[] CurrentMoves;
+
+    public PokemonSaveData()
+    {
+    }
 
     /// <summary>
     /// 将宝可梦对象转换成可序列化的数据

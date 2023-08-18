@@ -7,7 +7,7 @@ namespace PokemonSystem.Core.Items;
 /// 招式学习器
 /// </summary>
 [Serializable]
-public class TechnicalMachine
+public class TechnicalMachine : Item
 {
     /// <summary>
     /// 招式

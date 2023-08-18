@@ -1,5 +1,6 @@
 ﻿using System;
 using PokemonSystem.Core.Items;
+using PokemonSystem.Core.Poke;
 
 namespace PokemonSystem.Core;
 
@@ -13,6 +14,11 @@ public class EvolutionCondition
     /// 进化后的宝可梦
     /// </summary>
     public PokemonData ToPokemon;
+
+    /// <summary>
+    /// 额外产生的宝可梦
+    /// </summary>
+    public PokemonData ExtraPokemon;
 
     /// <summary>
     /// 需要等级
@@ -33,4 +39,9 @@ public class EvolutionCondition
     /// 需要时间
     /// </summary>
     public TimeSlot NeedTime;
+
+    /// <summary>
+    /// 需要性别
+    /// </summary>
+    public GenderEnum NeedGender;
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PokemonSystem.Core.Statistics;
 
@@ -92,5 +93,56 @@ public abstract class StatisticValue<T> where T : struct
             default:
                 return false;
         }
+    }
+
+    /// <summary>
+    /// 能力索引器
+    /// </summary>
+    /// <param name="type">能力类型</param>
+    public T? this[StatisticType type]
+    {
+        get => GetValue(type);
+        set
+        {
+            if (value is not null) SetValue(type, (T)value);
+        }
+    }
+
+    /// <summary>
+    /// 获取能力迭代器
+    /// </summary>
+    /// <returns></returns>
+    public virtual IEnumerator<(StatisticType, T)> GetEnumerator()
+    {
+        yield return (StatisticType.HP, HP);
+
+        yield return (StatisticType.Attack, Attack);
+
+        yield return (StatisticType.Defense, Defense);
+
+        yield return (StatisticType.SpecialAttack, SpecialAttack);
+
+        yield return (StatisticType.SpecialDefense, SpecialDefense);
+
+        yield return (StatisticType.Speed, Speed);
+    }
+
+    /// <summary>
+    /// 获取能力类型迭代器
+    /// </summary>
+    /// <returns>能力类型迭代器</returns>
+    public virtual IEnumerable<StatisticType> GetTypes()
+    {
+        yield return StatisticType.HP;
+
+        yield return StatisticType.Attack;
+
+        yield return StatisticType.Defense;
+
+        yield return StatisticType.SpecialAttack;
+
+        yield return StatisticType.SpecialDefense;
+
+        yield return StatisticType.Speed;
     }
 }

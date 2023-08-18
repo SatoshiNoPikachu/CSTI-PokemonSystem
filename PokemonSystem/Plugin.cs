@@ -1,18 +1,25 @@
-﻿using BepInEx;
+﻿using System;
+using BepInEx;
 using HarmonyLib;
 using System.IO;
 using System.Reflection;
+using PokemonSystem.Core.Moves;
+using PokemonSystem.Core.Poke;
+using PokemonSystem.Core.Statistics;
+using PokemonSystem.Tools;
+using UnityEngine;
 
 namespace PokemonSystem;
 
 [BepInPlugin("Pikachu.PokemonSystem", "Pokemon System", "0.0.0.1")]
 public class Plugin : BaseUnityPlugin
 {
+    public static Plugin Instance;
+
     private void Awake()
     {
-        if (AccessTools.TypeByName("ModLoader.ModPack") != null)
-            if (IsDisable("PokemonSystem"))
-                return;
+        if (AccessTools.TypeByName("ModLoader.ModPack") != null && IsDisable("PokemonSystem")) return;
+        Instance = this;
 
         Harmony.CreateAndPatchAll(typeof(Plugin));
         Logger.LogInfo("Plugin [Pokemon System] is loaded!");
