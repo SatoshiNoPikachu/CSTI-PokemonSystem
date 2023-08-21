@@ -2,7 +2,7 @@
 using PokemonSystem.Core.Statistics;
 using UnityEngine;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Poke;
 
 /// <summary>
 /// 性格

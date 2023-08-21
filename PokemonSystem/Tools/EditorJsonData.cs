@@ -10,6 +10,7 @@ using LitJson;
 using ModLoader;
 using PokemonSystem.Core;
 using PokemonSystem.Core.Experiences;
+using PokemonSystem.Core.Gender;
 using PokemonSystem.Core.Moves;
 using PokemonSystem.Core.Poke;
 using PokemonSystem.Core.Statistics;

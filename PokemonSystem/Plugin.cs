@@ -15,7 +15,7 @@ public class Plugin : BaseUnityPlugin
         if (AccessTools.TypeByName("ModLoader.ModPack") != null && IsDisable("PokemonSystem")) return;
         Instance = this;
 
-        Harmony.CreateAndPatchAll(typeof(Plugin));
+        Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
         Logger.LogInfo("Plugin [Pokemon System] is loaded!");
     }
 
@@ -28,11 +28,5 @@ public class Plugin : BaseUnityPlugin
     public static string GetSelfDllPath()
     {
         return Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-    }
-
-    [HarmonyPostfix, HarmonyPatch(typeof(GameLoad), "LoadMainGameData")]
-    public static void GameLoad_LoadMainGameData_Postfix()
-    {
-        Manager.DataManager.LoadData();
     }
 }

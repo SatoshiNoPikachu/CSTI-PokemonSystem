@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Gender;
 
 /// <summary>
 /// 性别

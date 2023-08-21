@@ -41,15 +41,15 @@ public static class DataManager
     {
         var warp_data = new Dictionary<ScriptableObject, JsonData>();
 
-        _LoadDataScriptObj(TypeDict, "Poke-Type", warp_data);
+        LoadDataScriptObj(TypeDict, "Poke-Type", warp_data);
 
-        _LoadDataScriptObj(NatureDict, "Poke-Nature");
+        LoadDataScriptObj(NatureDict, "Poke-Nature");
 
-        _LoadDataScriptObj(EggGroupDict, "Poke-EggGroup");
+        LoadDataScriptObj(EggGroupDict, "Poke-EggGroup");
 
-        _LoadDataScriptObj(MoveDict, "Poke-Move", warp_data);
+        LoadDataScriptObj(MoveDict, "Poke-Move", warp_data);
 
-        _LoadDataScriptObj(PokemonDataDict, "Poke-Pokemon", warp_data);
+        LoadDataScriptObj(PokemonDataDict, "Poke-Pokemon", warp_data);
 
         WarpData(warp_data);
     }
@@ -99,22 +99,6 @@ public static class DataManager
         return list;
     }
 
-    // private static void _LoadData<T>(Dictionary<string, T> dict, string data_name)
-    // {
-    //     dict.Clear();
-    //
-    //     var path = Path.Combine(Plugin.GetSelfDllPath(), data_name);
-    //     if (!Directory.Exists(path)) return;
-    //     var files = new DirectoryInfo(path).GetFiles("*.json");
-    //     foreach (var file in files)
-    //     {
-    //         var json = File.ReadAllText(file.FullName, Encoding.UTF8);
-    //         var name = Path.GetFileNameWithoutExtension(file.Name);
-    //         var obj = JsonMapper.ToObject<T>(json);
-    //         dict[name] = obj;
-    //     }
-    // }
-
     /// <summary>
     /// 加载 ScriptableObject 数据
     /// </summary>
@@ -122,7 +106,7 @@ public static class DataManager
     /// <param name="data_name">目录名称</param>
     /// <param name="out_dict">输出字典</param>
     /// <typeparam name="T">派生自 ScriptableObject 的类型</typeparam>
-    private static void _LoadDataScriptObj<T>(IDictionary<string, T> dict, string data_name,
+    private static void LoadDataScriptObj<T>(IDictionary<string, T> dict, string data_name,
         IDictionary<ScriptableObject, JsonData> out_dict = null)
         where T : ScriptableObject
     {

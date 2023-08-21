@@ -98,13 +98,12 @@
     <ItemGroup>
         <Compile Include="BaseMod.cs" />
         <Compile Include="Core\EggGroup.cs" />
-        <Compile Include="Core\EvolutionCondition.cs" />
         <Compile Include="Core\Experiences\Experience.cs" />
         <Compile Include="Core\Experiences\ExperienceGroup.cs" />
         <Compile Include="Core\Experiences\ExperienceTable.cs" />
-        <Compile Include="Core\Gender.cs" />
-        <Compile Include="Core\GenderEnum.cs" />
-        <Compile Include="Core\GenderRatio.cs" />
+        <Compile Include="Core\Gender\Gender.cs" />
+        <Compile Include="Core\Gender\GenderEnum.cs" />
+        <Compile Include="Core\Gender\GenderRatio.cs" />
         <Compile Include="Core\IScriptableObject.cs" />
         <Compile Include="Core\Items\Helditem.cs" />
         <Compile Include="Core\Items\Item.cs" />
@@ -114,7 +113,8 @@
         <Compile Include="Core\Moves\MoveByLevel.cs" />
         <Compile Include="Core\Moves\MoveCategory.cs" />
         <Compile Include="Core\Moves\MoveEffect.cs" />
-        <Compile Include="Core\Nature.cs" />
+        <Compile Include="Core\Poke\EvolutionCondition.cs" />
+        <Compile Include="Core\Poke\Nature.cs" />
         <Compile Include="Core\Poke\Pokemon.cs" />
         <Compile Include="Core\Poke\PokemonData.cs" />
         <Compile Include="Core\Poke\PokemonSaveData.cs" />
@@ -127,6 +127,8 @@
         <Compile Include="Core\TimeSlot.cs" />
         <Compile Include="Core\Type.cs" />
         <Compile Include="Manager\DataManager.cs" />
+        <Compile Include="Patcher\CardGraphicsPatch.cs" />
+        <Compile Include="Patcher\GameLoadPatch.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Tools\EditorJsonData.cs" />

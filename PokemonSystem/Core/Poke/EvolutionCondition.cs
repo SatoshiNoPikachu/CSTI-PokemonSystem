@@ -1,8 +1,8 @@
 ﻿using System;
+using PokemonSystem.Core.Gender;
 using PokemonSystem.Core.Items;
-using PokemonSystem.Core.Poke;
 
-namespace PokemonSystem.Core;
+namespace PokemonSystem.Core.Poke;
 
 /// <summary>
 /// 进化条件
