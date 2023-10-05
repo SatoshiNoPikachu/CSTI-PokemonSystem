@@ -218,6 +218,11 @@ public class EditorJsonData
         }
     }
 
+    /// <summary>
+    /// 加载注释
+    /// </summary>
+    /// <param name="path">路径</param>
+    /// <returns>注释字典</returns>
     private Dictionary<string, string> LoadNotes(string path)
     {
         var dict = new Dictionary<string, string>();
@@ -331,7 +336,7 @@ public class EditorJsonData
         {
             data = new JsonData(0);
         }
-        else if (type.IsArray)
+        else if (type.IsArray || ResolveGenericType(type) == typeof(List<>))
         {
             data = new JsonData();
             data.SetJsonType(JsonType.Array);
@@ -403,16 +408,23 @@ public class EditorJsonData
     /// 若参数 type 不满足以下任一情况，则直接返回该参数 <br/>
     /// 为整数类型时，返回 int 类型 <br/>
     /// 为字符类型时，返回 string 类型 <br/>
-    /// 为数组类型时，返回数组元素的类型
+    /// 为数组类型时，返回数组元素的类型 <br/>
+    /// 为列表类型时，返回列表元素的类型
     /// </summary>
     /// <param name="type">类型</param>
-    /// <returns></returns>
+    /// <returns>解析后的类型</returns>
     private static Type ResolveType(Type type)
     {
         var t = type;
+
+        // 解析数组类型
         if (type.IsArray) t = type.GetElementType();
         if (t is null) return type;
 
+        // 解析列表类型
+        if (ResolveGenericType(type) == typeof(List<>)) t = type.GetGenericArguments()[0];
+
+        // 解析基元类型
         if (!t.IsPrimitive) return t;
         if (t == typeof(char)) return typeof(string);
         if (t != typeof(bool) && t != typeof(float) && t != typeof(double)) return typeof(int);
@@ -420,16 +432,29 @@ public class EditorJsonData
         return t;
     }
 
+
     /// <summary>
-    /// 
+    /// 解析泛型类型
     /// </summary>
-    /// <param name="field"></param>
-    /// <returns></returns>
+    /// <param name="type">类型</param>
+    /// <returns>解析后的类型</returns>
+    private static Type ResolveGenericType(Type type)
+    {
+        return type.IsGenericType ? type.GetGenericTypeDefinition() : type;
+    }
+
+    /// <summary>
+    /// 字段是否不可序列化 <br/>
+    /// 不可序列化的字段：字典类型，或 static | const | readonly 修饰的
+    /// </summary>
+    /// <param name="field">字段</param>
+    /// <returns>是否不可序列化</returns>
     private static bool IsFieldNotSerialized(FieldInfo field)
     {
         if (field.IsStatic) return true;
         if (field.IsLiteral) return true;
         if (field.IsInitOnly) return true;
+        if (ResolveGenericType(field.FieldType) == typeof(Dictionary<,>)) return true;
 
         return field.GetCustomAttribute<NonSerializedAttribute>() is not null;
     }
